@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrepreneur, Techie and Gamer</title>
+    <style>
+          body {
+        background: white;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #6d6875;
+        text-align:center;
+        font-size: 14px;
+    }
+
+    h1 {
+        color: #e5989b;
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    h2 {
+        color: #b5838d;
+        font-size: 22px;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    a {
+        color: #ffb4a2;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #ffb4a2;
+        border-bottom: 2px dashed #6d6875;
+    }
+
+    img {
+    border-radius: 50px;
+    width: 100px;
+    padding: 8px;
+    }
+
+
+    button {
+        color: #ffffff;
+        background: #ffb4a2;
+        display: block;
+        padding: 15px 20px;
+        margin: 15px auto;
+        border: 1px solid #ffb4a2;
+        border-radius: 40px;
+    }
+
+    button:hover {
+        color: #ffffff;
+        transition: all 200ms ease-in-out;
+        background: #b5838d;
+        border: 1px solid #b5838d;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+    }
+
+    ul{
+        list-style: none;
+        padding: 10px 0px;
+        margin: 0 auto;
+        max-width: 300px;
+        font-size: 14px;
+        border-radius: 10px;  
+    }
+    ul:hover {
+        color: #1a64d6;
+        transition: all 200ms ease-in-out;
+        background: linear-gradient(#ffcdb2, #ffb4a2);
+        border-radius: 10px;  
+    }
+
+    li{
+        color: #6d6875;
+        font-size: 12px;
+        display:block;
+        padding: 10px 0px;
+        margin: 0 auto;
+    }
+    footer{
+        font-family:'Courier New', Courier, monospace;
+        color: #b5838d;
+        text-align:center;
+        padding: 10px;
+    }
+    p{
+        color: #6d6875;
+        text-align:justify;
+        padding: 10px;
+        margin: 0 auto;
+        margin-bottom: 1em;
+        max-width: 300px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Hello. 👋</h1>
+    <h2>I'm Arwina Mogul 👩‍💼</h2>
+    <p><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/004/554/original/arwina.jpg" align="left">I work with the team at <a href="https://beam.gg" target="_blank">Beam.gg</a>. A few fun facts: I have an <a href="https://www.16personalities.com/entj-personality">ENTJ</a> personality, I'm a woman/immigrant in the tech, business & gaming spaces, I worked overseas in Doha, Qatar and I love to play Strategy/RPG video games. Read on!</p>
+    <p>I was born in the Philippines, grew up in Hong Kong then migrated to Canada when I was on the verge of completing high school. At the time, I also self taught myself how to code and played a ton of video games.</p>
+    <p>I studied Social Sciences in college and worked in my field for 7 years until I made the leap into entrepreneurship and startups. Get in touch with <a href="mailto:arwina@beam.gg">me</a>.</p>
+    <p>Pick from any one of these topics that I'm passionate about to reveal the experiences and learnings that I have from it:</p>
+    </br><b>Community, Programming, Games, Books, Public Speaking</b>
+    <button>Pick A Topic</button>
+    <ul>
+        <li>✨ Woooooooosh! ✨</li>
+    </ul>
+    <footer><a href="https://twitter.com/arwinamogul" target="_blank">Twitter</a> & <a href="https://linkedin.com/in/amogul" target="_blank">LinkedIn</a></footer>
+    <footer>Coded by <a href="https://linkedin.com/in/amogul" target="_blank">Arwina Mogul</a></footer>
+
+
+    <script>
+        function askforTopic() {
+            let topic = prompt("Which topic are you interested in?");
+            let li = document.querySelector("li");
+            if (topic === "Community") {
+                li.innerHTML = "I've built and managed communities within the video game space for ten years.";
+                } else {
+                    if (topic === "Programming") {
+                        li.innerHTML = "I love programming! I'm currently taking classes in Computer Science from Harvard's CS50 course and attending the SheCodes certificate programs.";
+                    } else {
+                        if (topic === "Gaming") {
+                            li.innerHTML = "My favourite video game is Dota 2! I've devoted an embarassingly large amount of hours into Dota 2.";
+                        } else {
+                            if (topic === "Books") {
+                                li.innerHTML = "I love to read! A few books I'm reading: Ready Player Two, Exhalation, Hidden Valley Road and Moment of Lift.";
+                            } else {
+                                if (topic === "Public Speaking") {
+                                    li.innerHTML = "I have been a panelist, judge, moderator and key note speaker for multiple events locally and internationally.";
+                                }
+                            }
+                         }
+                    }
+                }
+            }
+
+        let applyButton = document.querySelector("button")
+        applyButton.addEventListener("click", askforTopic);
+    </script>
+</body>
+</html>
