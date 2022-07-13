@@ -1,4 +1,2 @@
 # hello-world
-9K mmr gamer
-
-New Lina player, long time Invoker lord.
+i'll find time someday to write something here
